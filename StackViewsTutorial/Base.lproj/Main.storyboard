@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StackViewsTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="H4g-po-qUp">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0x2-vL-dHN">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="550"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image01" translatesAutoresizingMaskIntoConstraints="NO" id="YkA-aD-vX0">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="177"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image02" translatesAutoresizingMaskIntoConstraints="NO" id="WMi-hu-J5a">
+                                                <rect key="frame" x="0.0" y="187" width="600" height="176"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image03" translatesAutoresizingMaskIntoConstraints="NO" id="mbs-JJ-geb">
+                                                <rect key="frame" x="0.0" y="373" width="600" height="177"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NVJ-gH-Qtz">
+                                        <rect key="frame" x="0.0" y="570" width="600" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRn-If-YKs">
+                                                <rect key="frame" x="0.0" y="0.0" width="88" height="30"/>
+                                                <state key="normal" title="Hide image 1"/>
+                                                <connections>
+                                                    <action selector="onButton1Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ttD-GJ-4J6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTR-Dq-48b">
+                                                <rect key="frame" x="253" y="0.0" width="91" height="30"/>
+                                                <state key="normal" title="Hide image 2"/>
+                                                <connections>
+                                                    <action selector="onButton2Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9pv-PK-K6E"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpB-1W-nSB">
+                                                <rect key="frame" x="509" y="0.0" width="91" height="30"/>
+                                                <state key="normal" title="Hide image 3"/>
+                                                <connections>
+                                                    <action selector="onButton3Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d3w-vU-V7o"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="H4g-po-qUp" secondAttribute="trailing" constant="-20" id="9i9-nf-T6b"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="H4g-po-qUp" secondAttribute="bottom" id="C77-Og-Ffy"/>
+                            <constraint firstItem="H4g-po-qUp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="CY6-vW-fGv"/>
+                            <constraint firstItem="H4g-po-qUp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="o1b-W5-rIR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="oRn-If-YKs" id="gG7-oe-byA"/>
+                        <outlet property="button2" destination="gTR-Dq-48b" id="1z3-H7-nD1"/>
+                        <outlet property="button3" destination="zpB-1W-nSB" id="mI5-Jd-140"/>
+                        <outlet property="image1" destination="YkA-aD-vX0" id="Lck-27-9Ez"/>
+                        <outlet property="image2" destination="WMi-hu-J5a" id="M57-6S-crt"/>
+                        <outlet property="image3" destination="mbs-JJ-geb" id="598-Oh-Sn5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="418"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image01" width="400" height="300"/>
+        <image name="image02" width="400" height="300"/>
+        <image name="image03" width="400" height="300"/>
+    </resources>
+</document>
